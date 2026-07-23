@@ -81,7 +81,7 @@ pico_board_cmake_set_default(PICO_FLASH_SIZE_BYTES, (2 * 1024 * 1024))
 
 pico_board_cmake_set_default(PICO_RP2350_A2_SUPPORTED, 1)
 #ifndef PICO_RP2350_A2_SUPPORTED
-#define PICO_RP2350_A2_SUPPORTED 1
+#define PICO_RP2350_A2_SUPPORTED 0
 #endif
 
 #endif
