@@ -9,15 +9,15 @@
 //       SHOULD ONLY CONSIST OF PREPROCESSOR DIRECTIVES
 // -----------------------------------------------------
 
-// This header may be included by other board headers as "boards/cpb.h"
+// This header may be included by other board headers as "boards/clintech_cpb.h"
 
-#ifndef _BOARDS_CPB_H
-#define _BOARDS_CPB_H
+#ifndef _BOARDS_CLINTECH_CPB_H
+#define _BOARDS_CLINTECH_CPB_H
 
 pico_board_cmake_set(PICO_PLATFORM, rp2350)
 
 // For board detection
-#define CPB
+#define CLINTECH_CPB
 
 // --- RP2350 VARIANT ---
 // This means RP2350B
@@ -79,7 +79,7 @@ pico_board_cmake_set_default(PICO_FLASH_SIZE_BYTES, (2 * 1024 * 1024))
 #define PICO_FLASH_SIZE_BYTES (2 * 1024 * 1024)
 #endif
 
-pico_board_cmake_set_default(PICO_RP2350_A2_SUPPORTED, 1)
+pico_board_cmake_set_default(PICO_RP2350_A2_SUPPORTED, 0)
 #ifndef PICO_RP2350_A2_SUPPORTED
 #define PICO_RP2350_A2_SUPPORTED 0
 #endif
